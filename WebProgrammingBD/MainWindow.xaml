@@ -1,0 +1,29 @@
+﻿<Window x:Class="WebProgrammingBD.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebProgrammingBD"
+        mc:Ignorable="d"
+        Title="Web Programming Assignments" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Левый столбец: Разделы -->
+        <StackPanel Grid.Column="0" Margin="10">
+            <TextBlock Text="Sections" FontWeight="Bold" FontSize="16" />
+            <ListBox x:Name="SectionList" SelectionChanged="SectionList_SelectionChanged" />
+            <Button Content="Add Section" Click="AddSection_Click" />
+        </StackPanel>
+
+        <!-- Правый столбец: Задания -->
+        <StackPanel Grid.Column="1" Margin="10">
+            <TextBlock Text="Assignments" FontWeight="Bold" FontSize="16" />
+            <ListBox x:Name="AssignmentList" />
+            <Button Content="Add Assignment" Click="AddAssignment_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
