@@ -40,12 +40,19 @@ namespace WebProgrammingBD
 
         private void AddSection_Click(object sender, RoutedEventArgs e)
         {
-            // Логика для добавления нового раздела
+            AddSectionWindow addSectionWindow = new AddSectionWindow();
+            addSectionWindow.ShowDialog();
         }
 
         private void AddAssignment_Click(object sender, RoutedEventArgs e)
         {
-            // Логика для добавления нового задания
+            AddAssignmentWindow addAssignmentWindow = new AddAssignmentWindow();
+            addAssignmentWindow.ShowDialog();
+        }
+
+        private void AddStudent_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

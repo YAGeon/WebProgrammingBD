@@ -1,0 +1,20 @@
+﻿<Window x:Class="WebProgrammingBD.AddAssignmentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WebProgrammingBD"
+        mc:Ignorable="d"
+        Title="Add Assignment" Height="250" Width="400">
+    <Grid>
+        <StackPanel>
+            <Label Content="Enter a job name:" Margin="5"/>
+            <TextBox x:Name="JobName" Margin="5"/>
+            <Label Content="Describe the task:" Margin="5"/>
+            <TextBox x:Name="JobDescription" Margin="5"/>
+            <Label Content="Select section:" Margin="5"/>
+            <ComboBox x:Name="SectionBox" Margin="5"/>
+            <Button Content="Add" Margin="5" Click="AddAssigment_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

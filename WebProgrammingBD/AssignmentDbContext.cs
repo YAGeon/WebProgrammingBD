@@ -10,6 +10,11 @@ namespace WebProgrammingBD
 {
     public class AssignmentDbContext : DbContext
     {
+
+        public AssignmentDbContext()
+        {
+            Database.EnsureCreated();
+        }
         public DbSet<Section> Sections { get; set; }
         public DbSet<Assignment> Assignments { get; set; }
         public DbSet<Student> Students { get; set; }
@@ -22,6 +27,7 @@ namespace WebProgrammingBD
                 new MySqlServerVersion(new Version(8, 0, 25)));
         }
     }
+
 
     public class Section
     {

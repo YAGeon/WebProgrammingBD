@@ -54,9 +54,7 @@ namespace WebProgrammingBD
                 this.Close();
             }
             else
-            {
                 MessageBox.Show("Пожалуйста, выберите студента и задание.");
-            }
         }
     }
 }
